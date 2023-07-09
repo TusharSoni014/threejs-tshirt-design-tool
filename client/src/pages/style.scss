@@ -1,0 +1,25 @@
+.threejs-text {
+  background-image: linear-gradient(to right bottom, #13dfba, #8000ca) !important;
+  background-clip: text;
+  font-weight: 700;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  .icon{
+    height: 100%;
+    margin: 0 0 0 3px;
+  }
+}
+
+.customizer-btn-container{
+  position: relative;
+  height: 100%;
+  .editor-btns-container{
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.05);
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    top: 50% !important;
+    transform: translateY(-50%);
+  }
+}

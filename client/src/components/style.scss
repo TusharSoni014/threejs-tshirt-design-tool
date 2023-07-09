@@ -1,0 +1,39 @@
+.filtertabs-container {
+  .tab-btn {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition-duration: 0.25s;
+    &:hover {
+      scale: 0.95;
+    }
+  }
+}
+
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    display: flex;
+    align-items: center;
+    .icon {
+      height: 1.5rem;
+      width: 1.5rem;
+      animation: spin 1s linear infinite;
+      stroke: black;
+    }
+    .loading-text {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      font-weight: 500;
+      color: black;
+      cursor: default;
+    }
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
